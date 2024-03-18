@@ -1,9 +1,10 @@
+import SignUpPage from "../pages/SignUpPage/SignUpPage";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Reset</h1>
+      <SignUpPage />
     </>
   );
 }
