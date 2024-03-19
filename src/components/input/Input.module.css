@@ -1,0 +1,14 @@
+.input {
+  font-family: "Basis Grotesque Pro", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33333;
+  color: #a1abb5;
+
+  border: 1.2px solid #d3d8dc;
+  border-radius: 6px;
+  padding: 0px 12px;
+  width: 400px;
+  height: 48px;
+  background: #fff;
+}
