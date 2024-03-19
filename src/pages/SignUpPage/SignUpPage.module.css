@@ -9,3 +9,35 @@
 .wrapper__decor {
   margin-bottom: 38px;
 }
+
+.wrapper__email {
+  margin-bottom: 25px;
+}
+
+.wrapper__password {
+  margin-bottom: 15px;
+}
+
+.wrapper__button {
+  margin-bottom: 20px;
+}
+
+.wrapper__forgot {
+  margin-bottom: 30px;
+}
+
+.forgot {
+  font-family: "Basis Grotesque Pro", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: right;
+  color: #316fea;
+}
+
+.wrapper__new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
