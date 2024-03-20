@@ -9,9 +9,9 @@ import {
   Title,
 } from "../../components";
 
-import styles from "./SignUpPage.module.css";
+import styles from "../SignUpPage/SignUpPage.module.css";
 
-const SignUpPage = () => {
+const SignInPage = () => {
   const { navigation } = useAuth();
 
   return (
@@ -28,24 +28,18 @@ const SignUpPage = () => {
       <div className={styles.wrapper__email}>
         <Input placeholder="Work email" />
       </div>
-      <div className={styles.wrapper__password}>
-        <Input placeholder="Password" />
-      </div>
-      <div className={styles.wrapper__forgot}>
-        <p className={styles.forgot}>Forgot your password?</p>
-      </div>
       <div className={styles.wrapper__button}>
         <Button>Log in to Qencode</Button>
       </div>
       <div className={styles.wrapper__new}>
         <NewCompany
-          nav="Sign in"
-          title="Already registered?"
-          onClick={() => navigation("/signin")}
+          nav="Sign up"
+          title="Is your company new to Qencode?"
+          onClick={() => navigation("/")}
         />
       </div>
     </section>
   );
 };
 
-export default SignUpPage;
+export default SignInPage;
