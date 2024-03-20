@@ -15,7 +15,7 @@
 }
 
 .wrapper__password {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .wrapper__button {
@@ -24,6 +24,7 @@
 
 .wrapper__forgot {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .forgot {
@@ -40,4 +41,17 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+
+.password {
+  color: #060e1e;
+  font-family: "Basis Grotesque Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 140% */
+  letter-spacing: -0.036px;
+
+  text-align: start;
+  margin-bottom: 8px;
 }

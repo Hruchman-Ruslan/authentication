@@ -28,6 +28,12 @@ const SignInPage = () => {
       <div className={styles.wrapper__email}>
         <Input placeholder="Work email" />
       </div>
+      <div
+        className={styles.wrapper__forgot}
+        onClick={() => navigation("/password")}
+      >
+        <p className={styles.forgot}>Forgot your password?</p>
+      </div>
       <div className={styles.wrapper__button}>
         <Button>Log in to Qencode</Button>
       </div>
