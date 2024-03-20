@@ -20,7 +20,7 @@ const SignUpPage = () => {
         <Logo />
       </div>
       <div className={styles.wrapper__title}>
-        <Title>Log in to your account</Title>
+        <Title>Register your account</Title>
       </div>
       <div className={styles.wrapper__decor}>
         <Decor />
@@ -31,11 +31,8 @@ const SignUpPage = () => {
       <div className={styles.wrapper__password}>
         <Input placeholder="Password" />
       </div>
-      <div className={styles.wrapper__forgot}>
-        <p className={styles.forgot}>Forgot your password?</p>
-      </div>
       <div className={styles.wrapper__button}>
-        <Button>Log in to Qencode</Button>
+        <Button>Register in to Qencode</Button>
       </div>
       <div className={styles.wrapper__new}>
         <NewCompany

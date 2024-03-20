@@ -6,6 +6,6 @@ export * from "./decor/Decor.tsx";
 export * from "./input/Input.tsx";
 export * from "./button/Button.tsx";
 export * from "./new-company/NewCompany.tsx";
-export * from "./Layout/Layout.tsx";
+export * from "./Layout.tsx";
 
 // css

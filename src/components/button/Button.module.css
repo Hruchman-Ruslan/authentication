@@ -14,3 +14,22 @@
 
   background: #316fea;
 }
+
+.transparent {
+  font-family: "Basis Grotesque Pro";
+  font-weight: 500;
+
+  width: 400px;
+  height: 48px;
+  flex-shrink: 0;
+
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  color: #060e1e;
+  line-height: 21px; /* 131.25% */
+  letter-spacing: -0.038px;
+
+  border-radius: 8px;
+  border: 1.2px solid #d3d8dc;
+}
