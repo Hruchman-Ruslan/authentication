@@ -8,7 +8,14 @@
   border: 1.2px solid #d3d8dc;
   border-radius: 6px;
   padding: 0px 12px;
-  width: 400px;
+  min-width: 300px;
   height: 48px;
   background: #fff;
+  outline: none;
+}
+
+@media screen and (min-width: 767.98px) {
+  .input {
+    width: 400px;
+  }
 }
