@@ -16,6 +16,7 @@
 
 .wrapper__password {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .wrapper__button {
@@ -54,4 +55,8 @@
 
   text-align: start;
   margin-bottom: 8px;
+}
+
+.box {
+  position: relative;
 }

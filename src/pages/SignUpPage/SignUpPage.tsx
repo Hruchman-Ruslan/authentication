@@ -1,8 +1,11 @@
+import { useState } from "react";
+
 import { useAuth } from "../../hooks/useAuth";
 
 import {
   Button,
   Decor,
+  Icon,
   Input,
   Logo,
   NewCompany,
@@ -12,7 +15,11 @@ import {
 import styles from "./SignUpPage.module.css";
 
 const SignUpPage = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
   const { navigation } = useAuth();
+
+  const toggle = () => setShowPassword((prevState) => !prevState);
 
   return (
     <section>
@@ -29,7 +36,15 @@ const SignUpPage = () => {
         <Input placeholder="Work email" />
       </div>
       <div className={styles.wrapper__password}>
-        <Input placeholder="Password" />
+        <Input
+          placeholder="Password"
+          type={showPassword ? "text" : "password"}
+        />
+        {showPassword ? (
+          <Icon idIcon="hide" onClick={toggle} />
+        ) : (
+          <Icon idIcon="show" onClick={toggle} />
+        )}
       </div>
       <div className={styles.wrapper__button}>
         <Button>Register in to Qencode</Button>

@@ -2,10 +2,11 @@ import styles from "./Input.module.css";
 
 export interface InputProps {
   placeholder: string;
+  type?: string;
 }
 
-export const Input = ({ placeholder }: InputProps) => {
+export const Input = ({ placeholder, type = "text" }: InputProps) => {
   return (
-    <input type="text" placeholder={placeholder} className={styles.input} />
+    <input type={type} placeholder={placeholder} className={styles.input} />
   );
 };

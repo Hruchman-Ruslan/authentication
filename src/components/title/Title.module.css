@@ -1,7 +1,13 @@
 .title {
   font-family: "Basis Grotesque Pro", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
   color: #1a1919;
+}
+
+@media screen and (min-width: 767.98px) {
+  .title {
+    font-size: 30px;
+  }
 }
