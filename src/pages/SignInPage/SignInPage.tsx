@@ -1,8 +1,12 @@
+import { ChangeEvent, useState } from "react";
+
 import { useAuth } from "../../hooks/useAuth";
+import { emailValidate } from "../../schema";
 
 import {
   Button,
   Decor,
+  ErrorMessage,
   Input,
   Logo,
   NewCompany,
@@ -12,7 +16,18 @@ import {
 import styles from "../SignUpPage/SignUpPage.module.css";
 
 const SignInPage = () => {
+  const [email, setEmail] = useState<string>("");
+  const [errorEmail, setErrorEmail] = useState<string>("");
+
+  console.log(email);
+
   const { navigation } = useAuth();
+
+  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { value } = e.target;
+    setEmail(value);
+    setErrorEmail(emailValidate(value));
+  };
 
   return (
     <section>
@@ -26,7 +41,12 @@ const SignInPage = () => {
         <Decor />
       </div>
       <div className={styles.wrapper__email}>
-        <Input placeholder="Work email" />
+        {errorEmail && <ErrorMessage position="up">{errorEmail}</ErrorMessage>}
+        <Input
+          placeholder="Work email"
+          value={email}
+          onChange={handleEmailChange}
+        />
       </div>
       <div
         className={styles.wrapper__forgot}
