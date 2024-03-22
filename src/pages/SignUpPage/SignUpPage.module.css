@@ -12,6 +12,7 @@
 
 .wrapper__email {
   margin-bottom: 25px;
+  position: relative;
 }
 
 .wrapper__password {

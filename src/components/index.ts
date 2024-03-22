@@ -8,5 +8,6 @@ export * from "./button/Button.tsx";
 export * from "./new-company/NewCompany.tsx";
 export * from "./Layout.tsx";
 export * from "./icon/Icon.tsx";
+export * from "./errorMessage/ErrorMessage.tsx";
 
 // css
