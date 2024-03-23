@@ -15,6 +15,7 @@ import {
 } from "../../components";
 
 import styles from "./SignUpPage.module.css";
+import { login } from "../../redux/auth/authOperations";
 
 const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -23,7 +24,7 @@ const SignUpPage = () => {
   const [errorEmail, setErrorEmail] = useState<string>("");
   const [errorPassword, setErrorPassword] = useState<string>("");
 
-  const { navigation } = useAuth();
+  const { navigation, dispatch } = useAuth();
 
   const toggle = () => setShowPassword((prevState) => !prevState);
 
@@ -39,14 +40,14 @@ const SignUpPage = () => {
     setErrorPassword(passwordValidate(value));
   };
 
-  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(
-      "email",
-      email.toLowerCase(),
-      "password:",
-      password.toLowerCase()
-    );
+
+    try {
+      await dispatch(login({ email, password }));
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
