@@ -1,5 +1,8 @@
 import { ChangeEvent, useState } from "react";
+
+import { passwordValidate } from "../../schema";
 import { useAuth } from "../../hooks/useAuth";
+
 import {
   Button,
   ErrorMessage,
@@ -9,8 +12,7 @@ import {
   Title,
 } from "../../components";
 
-import styles from "../SignUpPage/SignUpPage.module.css";
-import { passwordValidate } from "../../schema";
+import styles from "../SignInPage/SigInPage.module.css";
 
 const CreatePasswordPage = () => {
   const [showPassword, setShowPassword] = useState(false);

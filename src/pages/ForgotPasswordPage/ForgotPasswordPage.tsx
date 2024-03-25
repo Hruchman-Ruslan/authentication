@@ -1,9 +1,11 @@
 import { useState, ChangeEvent } from "react";
+
 import { useAuth } from "../../hooks/useAuth";
 import { emailValidate } from "../../schema";
+
 import { Button, ErrorMessage, Input, Logo, Title } from "../../components";
 
-import styles from "../SignUpPage/SignUpPage.module.css";
+import styles from "../SignInPage/SigInPage.module.css";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState<string>("");
